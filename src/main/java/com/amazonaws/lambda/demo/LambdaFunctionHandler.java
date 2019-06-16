@@ -22,7 +22,7 @@ public class LambdaFunctionHandler implements RequestHandler<S3Event, String> {
     @Override
     public String handleRequest(S3Event event, Context context) {
         context.getLogger().log("Received event: " + event);
-
+/// aaaaaaaaaaaaaaa
         // Get the object from the event and show its content type
         String bucket = event.getRecords().get(0).getS3().getBucket().getName();
         String key = event.getRecords().get(0).getS3().getObject().getKey();
